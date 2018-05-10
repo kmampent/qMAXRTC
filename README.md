@@ -7,4 +7,5 @@ A sample generator for creating a set R is provided, as well as implementations 
 # Compilation
 
 generator: g++ -O3 -std=c++11 -o generator generator.cpp
+
 qmaxrtc: g++ -O3 -std=c++11 -o qmaxrtc main.cpp
