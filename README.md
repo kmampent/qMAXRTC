@@ -51,6 +51,27 @@ Theoretical guarantee: 0.32
 
 Performance: 0.911404
 
+./generator noisy 10 1.txt
+
+./qmaxrtc 5 1.txt both
+
+![Screenshot](images/noisy5.png)
+
+newick: ((6,7),((1,2,3,5),(0,4,8,9)));
+
+Theoretical guarantee: 0.296296
+
+Performance: 0.39
+
+./qmaxrtc 9 1.txt both
+
+![Screenshot](images/noisy9.png)
+
+newick: ((6,7),(9,((3,(1,2)),(0,(8,(4,5))))));
+
+Theoretical guarantee: 0.32
+
+Performance: 0.46
 
 
 
