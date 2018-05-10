@@ -34,14 +34,21 @@ output format: the output of the tree with q internal nodes can be saved in both
 
 ./qmaxrtc 5 1.txt both
 ![Screenshot](images/dc5.png)
+
 newick: ((3,4,5,7,10,15,16),((1,2,6,8,9,11,14,17,18),(0,12,13,19)));
+
 Theoretical guarantee: 0.296296
+
 Performance: 0.844737
 
 ./qmaxrtc 9 1.txt both
+
 ![Screenshot](images/dc9.png)
+
 newick: (((5,7,10),(3,4,15,16)),((0,12,13,19),((6,8,9,11,17),(1,2,14,18))));
+
 Theoretical guarantee: 0.32
+
 Performance: 0.911404
 
 
