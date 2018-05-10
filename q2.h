@@ -47,18 +47,18 @@ void printDotQ2(const char* file, vector<int>& down, vector<int>& up){
     for(i=0;i<up.size();i++) if(up[i] > mx ) mx = up[i];
 
     treeFout << "    " << mx+1 << " -> " << mx+2 << ";\n";
-    treeFout << "    " << mx+1 << " [style=\"filled\", label=\""<<""<<"\"];\n";
-    treeFout << "    " << mx+2 << " [style=\"filled\", label=\""<<""<<"\"];\n";
+    treeFout << "    " << mx+1 << " [label=\""<<""<<"\"];\n";
+    treeFout << "    " << mx+2 << " [label=\""<<""<<"\"];\n";
 
     for(i=0;i<up.size();i++){
 
         treeFout << "    " << mx+1 << " -> " << up[i] << ";\n";
-        treeFout << "    " << up[i] << " [style=\"filled\", label=\"" << up[i] <<"\"];\n";
+        treeFout << "    " << up[i] << " [label=\"" << up[i] <<"\"];\n";
     }
 
     for(i=0;i<down.size();i++){
         treeFout << "    " << mx+2 << " -> " << down[i] << ";\n";
-        treeFout << "    " << down[i] << " [style=\"filled\", label=\"" << down[i] << "\"];\n";
+        treeFout << "    " << down[i] << " [label=\"" << down[i] << "\"];\n";
     }
 
     treeFout << "}\n";
@@ -168,3 +168,4 @@ void maxrtc2(vector<triplet>& R, int n, vector<int>& down, vector<int>& up){
 
 
 #endif //QMAXRTC_Q_H
+
