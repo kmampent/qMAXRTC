@@ -14,7 +14,7 @@ qmaxrtc: g++ -O3 -std=c++11 -o qmaxrtc main.cpp
 
 type ./generator model[dc|noisy] n outputFile
 
-dc: builds a random binary tree T with n leafs following the uniform model, extracts all the triplets from T and saves them in outputFile.
+dc: builds a random binary tree T with n leaves following the uniform model, extracts all the triplets from T and saves them in outputFile.
 
 noisy: creates n^2 random triplets on a leaf label set of size n and saves the triplets in outputFile.
 
@@ -72,7 +72,4 @@ newick: ((6,7),(9,((3,(1,2)),(0,(8,(4,5))))));
 Theoretical guarantee: 0.32
 
 Performance: 0.46
-
-submitted
-
 
